@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascripts on Danishfood</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>  
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>         
+            </div>
+            
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+            
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        
+        <div class="flex-box-container-2" id="flex-cat-gen">         
+        </div>
+    </div>
+
+    <div class="container-3">   
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://as2.ftcdn.net/jpg/02/09/76/97/500_F_209769703_OFpllnHLID5rGvziJyZf1YWq81gwCGwR.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://as1.ftcdn.net/jpg/01/03/00/78/500_F_103007819_HCZkJhGH9iOGcwKejH1eEGQYbgtxCTbJ.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://as2.ftcdn.net/jpg/02/55/26/63/500_F_255266320_plc5wjJmfpqqKLh0WnJyLmjc6jFE9vfo.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>   
+                    <option value="green">Green</option>   
+                    <option value="reset">Reset</option>           
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+            <button class="btn-lg btn-primary -mr2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning -mr2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th>Wins</th>
+                    <th>Loses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>    
+        </div>
+        <div class="container-6">
+        <h2>Challenge 6: random folk</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="https://randomuser.me/api/?results=1" class="card-img-top" alt="picture">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
